@@ -4,7 +4,25 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("attendanceTable")
     .querySelector("tbody");
   const addStudentBtn = document.getElementById("addStudentBtn");
+  const printBtn = document.getElementById("printBtn");
+  const caption = document.querySelector("#attendanceTable caption");
   let studentCount = 0;
+
+  // Define month names in Uzbek Cyrillic
+  const monthNames = [
+    "Январь",
+    "Февраль",
+    "Март",
+    "Апрель",
+    "Май",
+    "Июнь",
+    "Июль",
+    "Август",
+    "Сентябрь",
+    "Октябрь",
+    "Ноябрь",
+    "Декабрь",
+  ];
 
   // Fetch the student data from the external JSON file
   fetch("students.json")
@@ -40,30 +58,33 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error fetching the student data:", error));
 
-  // Print the table
-  document.getElementById("printBtn").addEventListener("click", () => {
-    window.print();
-  });
-});
-
-document.getElementById("printBtn").addEventListener("click", () => {
+  // Set the table caption dynamically
   const today = new Date();
-  const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "."); // Format: dd.mm.yyyy
-  const pdfFileName = `${formattedDate}-davomat.pdf`;
+  const year = today.getFullYear();
+  const day = today.getDate().toString().padStart(2, "0"); // Add leading zero if needed
+  const monthIndex = today.getMonth(); // Month index (0-11)
+  const monthName = monthNames[monthIndex]; // Get the month name from the array
 
-  // Add the caption with the current date
-  const caption = document.createElement("caption");
-  caption.textContent = `Attendance on ${formattedDate}`;
-  document.getElementById("attendanceTable").appendChild(caption);
+  caption.textContent = `Бешарик тумани 2-умумтаълим мактаби бўйича ${year} йил ${day} ${monthName} куни дарсга келмаган ўқувчилар тўғрисидаги Маълумот`;
 
-  const element = document.getElementById("attendanceTable");
-  const opt = {
-    margin: 1,
-    filename: pdfFileName,
-    image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: "in", format: "a4", orientation: "landscape" },
-  };
+  // Download PDF
+  printBtn.addEventListener("click", () => {
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "."); // Format: dd.mm.yyyy
+    const pdfFileName = `${formattedDate}-davomat.pdf`;
 
-  html2pdf().from(element).set(opt).save();
+    // Update caption with the current date for the PDF
+    caption.textContent = `Бешарик тумани 2-умумтаълим мактаби бўйича ${year} йил ${day} ${monthName} куни дарсга келмаган ўқувчилар тўғрисидаги Маълумот`;
+
+    const element = document.getElementById("attendanceTable");
+    const opt = {
+      margin: 1,
+      filename: pdfFileName,
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "in", format: "a4", orientation: "landscape" },
+    };
+
+    html2pdf().from(element).set(opt).save();
+  });
 });

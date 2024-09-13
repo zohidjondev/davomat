@@ -3,34 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Attendance</title>
+    <title>Давомат</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Lesson Attendance</h1>
+    <h1>Давомат</h1>
 
     <!-- Dropdown Menu -->
-    <label for="studentSelect">Select Student:</label>
+    <label for="studentSelect">Ўқувчини Танланг: </label>
     <select id="studentSelect">
       <!-- Options will be loaded here via JavaScript -->
     </select>
 
-    <button id="addStudentBtn">Add Student</button>
+    <button id="addStudentBtn">Ўқувчини қўшиш</button>
 
     <!-- Table Section -->
     <table id="attendanceTable">
       <caption>
-        Lesson Attendance
+        <!-- Бешарик тумани 2-умумтаълим мактаби бўйича 2024 йил (хх ой) куни дарсга келмаган ўқувчилар тўғрисидаги Маълумот -->
       </caption>
       <thead>
         <tr>
           <th>№</th>
-          <th>Student Name</th>
-          <th>MFY</th>
-          <th>Street</th>
-          <th>House</th>
-          <th>Parents Name</th>
-          <th>Number</th>
+          <th>Дарсга келмаган ўқувчининг Ф. И</th>
+          <th>МФЙ</th>
+          <th>Кўча номи</th>
+          <th>Уй</th>
+          <th>Ота-онасининг Ф. И.</th>
+          <th>Ота-онасининг телефон рақами</th>
         </tr>
       </thead>
       <tbody>
@@ -38,7 +38,7 @@
       </tbody>
     </table>
 
-    <button id="printBtn">Download PDF</button>
+    <button id="printBtn">ПДФ-ни юклаб олиш</button>
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
