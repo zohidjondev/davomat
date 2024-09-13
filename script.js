@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
           row.insertCell(2).textContent = student.mfy; // MFY
           row.insertCell(3).textContent = student.street; // Street
           row.insertCell(4).textContent = student.house; // House
-          row.insertCell(5).textContent = ""; // Parents Name (for future use)
-          row.insertCell(6).textContent = ""; // Number (for future use)
+          row.insertCell(5).textContent = student.parentName; // Parents Name (for future use)
+          row.insertCell(6).textContent = student.parentNumber; // Number (for future use)
         });
       });
     })
@@ -47,10 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("printBtn").addEventListener("click", () => {
+  const today = new Date();
+  const formattedDate = today.toLocaleDateString("en-GB").replace(/\//g, "."); // Format: dd.mm.yyyy
+  const pdfFileName = `${formattedDate}-davomat.pdf`;
+
+  // Add the caption with the current date
+  const caption = document.createElement("caption");
+  caption.textContent = `Attendance on ${formattedDate}`;
+  document.getElementById("attendanceTable").appendChild(caption);
+
   const element = document.getElementById("attendanceTable");
   const opt = {
     margin: 1,
-    filename: "attendance.pdf",
+    filename: pdfFileName,
     image: { type: "jpeg", quality: 0.98 },
     html2canvas: { scale: 2 },
     jsPDF: { unit: "in", format: "a4", orientation: "landscape" },
