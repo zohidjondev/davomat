@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <title>Davomat</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Attendance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lesson Attendance</h1>
+
+  <!-- Dropdown Menu -->
+  <label for="studentSelect">Select Student:</label>
+  <select id="studentSelect" >
+    <!-- Options will be loaded here via JavaScript -->
+  </select>
+
+  <button id="addStudentBtn">Add Student</button>
+
+  <!-- Table Section -->
+  <table id="attendanceTable">
+    <caption>Lesson Attendance</caption>
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>Student Name</th>
+        <th>MFY</th>
+        <th>Street</th>
+        <th>House</th>
+        <th>Parents Name</th>
+        <th>Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows will be added here dynamically -->
+    </tbody>
+  </table>
+
+  <button id="printBtn">Print Table</button>
+
+  <script src="script.js"></script>
+</body>
 </html>
