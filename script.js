@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const studentSelect = document.getElementById("studentSelect");
-  const attendanceTable = document
-    .getElementById("attendanceTable")
-    .querySelector("tbody");
+  const attendanceTable = document.getElementById("attendanceTable").querySelector("tbody");
   const addStudentBtn = document.getElementById("addStudentBtn");
   const deleteLastBtn = document.querySelector(".deleteLastBtn"); // Ensure this matches the correct ID
   const printBtn = document.getElementById("printBtn");
@@ -12,18 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Define month names in Uzbek Cyrillic
   const monthNames = [
-    "январь",
-    "февраль",
-    "март",
-    "апрель",
-    "май",
-    "июнь",
-    "июль",
-    "август",
-    "сентябрь",
-    "октябрь",
-    "ноябрь",
-    "декабрь",
+    "январь", "февраль", "март", "апрель", "май", "июнь",
+    "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь",
   ];
 
   // Fetch the student data from the external JSON file
@@ -33,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const students = data.students;
 
       // Populate the dropdown with student names
-      students.forEach((student, index) => {  
+      students.forEach((student, index) => {
         const option = document.createElement("option");
         option.value = index;
         option.textContent = student.fullName;
@@ -43,12 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Add selected student(s) to the table
       addStudentBtn.addEventListener("click", () => {
         const selectedOptions = Array.from(studentSelect.selectedOptions);
-        const reasonText = reasonInput.value.trim();
-
-        if (reasonText === "") {
-          alert("Илтимос, ўқувчининг йўқлигини сабабини киритинг.");
-          return;
-        }
+        // Use 'noaniq' as default value for the reason if not provided
+        const reasonText = reasonInput.value.trim() || 'сабабсиз';
 
         selectedOptions.forEach((option) => {
           const student = students[option.value];
@@ -60,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           row.insertCell(2).textContent = student.mfy; // MFY
           row.insertCell(3).textContent = student.street; // Street
           row.insertCell(4).textContent = student.house; // House
-          row.insertCell(5).textContent = student.parentName; // Parents Name
+          row.insertCell(5).textContent = student.parentsName; // Parents Name
           row.insertCell(6).textContent = student.parentNumber; // Parent's Phone Number
           row.insertCell(7).textContent = reasonText; // Reason for absence
         });
@@ -102,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const opt = {
       margin: 1,
       filename: pdfFileName,
-      image: { type: "jpeg", quality: 0.98 }, // Use "jpeg" instead of "pdf" here
+      image: { type: "jpeg", quality: 0.98 },
       html2canvas: { scale: 2 },
       jsPDF: { unit: "in", format: "a4", orientation: "landscape" },
     };

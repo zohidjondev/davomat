@@ -1,27 +1,35 @@
 {
   "students": [
     {
+      "fullName": "Абдулатифова Мафтунахон",
+      "mfy": "Булоқ боши",
+      "street": "Ёшлар",
+      "house": 19,
+      "parentsName": "Абдусаматов  Камол, Абдусаматова Зухра",
+      "parentNumber": "91-322-69-00"
+    },
+    {
       "fullName": "Абдуллаев Равшан",
       "mfy": "Булоқ боши",
       "street": "А. Фаргоний",
       "house": 69,
-      "parentName": "Жураев Фарход, Жураева Ирода",
+      "parentsName": "Жураев Фарход, Жураева Ирода",
       "parentNumber": "99-399-78-17"
     },
     {
-      "fullName": "Абдулатипова Мафтунахон",
+      "fullName": "Абдумаликов Элбекжон",
       "mfy": "Булоқ боши",
-      "street": "Ёшлар",
-      "house": 19,
-      "parentName": "Абдусаматов  Камол, Абдусаматова Зухра",
-      "parentNumber": "91-322-69-00"
+      "street": "Булоқ боши",
+      "house": 17,
+      "parentsName": "Абдусамадова Махбуба",
+      "parentNumber": "88-829-55-11"
     },
     {
       "fullName": "Абдусаломова Зарнигор",
       "mfy": "Булоқ боши",
       "street": "Сирдарё",
       "house": 25,
-      "parentName": "Кулматов Асад, Бердиева Олмосхон",
+      "parentsName": "Кулматов Асад, Бердиева Олмосхон",
       "parentNumber": "94-492-00-24"
     },
     {
@@ -29,7 +37,7 @@
       "mfy": "Хамид Олимжон",
       "street": "Зиёлилар",
       "house": 4,
-      "parentName": "Мусурмонкулов Одилжон, Мусурмокулова Юлдуз",
+      "parentsName": "Мусурмонкулов Одилжон, Мусурмокулова Юлдуз",
       "parentNumber": "90-150-61-62"
     },
     {
@@ -37,79 +45,111 @@
       "mfy": "Янги Хаёт",
       "street": "Бешарик",
       "house": 131,
-      "parentName": "Жуманов Азиз, Кучкарова Хилола",
+      "parentsName": "Жуманов Азиз, Кучкарова Хилола",
       "parentNumber": "97-215-86-18"
-    },
-    {
-      "fullName": "Бахромов Озодбек",
-      "mfy": "Обод",
-      "street": "",
-      "house": 0,
-      "parentName": "",
-      "parentNumber": "94-134-09-09"
     },
     {
       "fullName": "Боходиржонов Равшанбек",
       "mfy": "Кият-Сартол",
       "street": "Кият",
       "house": 20,
-      "parentName": "Холматов Равшан, Духконова Наргиза",
+      "parentsName": "Холматов Равшан, Духконова Наргиза",
       "parentNumber": "99-998-56-76"
+    },
+    {
+      "fullName": "Бахромов Озодбек",
+      "mfy": "Обод",
+      "street": "Ёшлик",
+      "house": 4,
+      "parentsName": "Алимов Хомиджон",
+      "parentNumber": "90-857-57-30"
+    },
+    {
+      "fullName": "Бойиров Нурмуҳаммад",
+      "mfy": "___",
+      "street": "___",
+      "house": 0,
+      "parentsName": "___",
+      "parentNumber": "___"
+    },
+    {
+      "fullName": "Илёсиддинов Азизбек",
+      "mfy": "Нуробод",
+      "street": "Нуробод",
+      "house": 60,
+      "parentsName": "Гиёсиддинов Бахтиёржон",
+      "parentNumber": "90-343-97-81"
     },
     {
       "fullName": "Каххорова Нигорахон",
       "mfy": "Бой",
       "street": "Бой",
       "house": 23,
-      "parentName": "Каххоров Гаффоржон, Каххарова Маликахон",
+      "parentsName": "Каххоров Гаффоржон, Каххарова Маликахон",
       "parentNumber": "94-559-37-28"
-    },
-    {
-      "fullName": "Кодырова Сабрина",
-      "mfy": "Кулал",
-      "street": "Конзор",
-      "house": 39,
-      "parentName": "",
-      "parentNumber": ""
-    },
-    {
-      "fullName": "Маъруфов Зохиджон",
-      "mfy": "Файзобод",
-      "street": "Олтин Водий",
-      "house": 2,
-      "parentName": "Пулатов Зохиржон, Пулатова Шахло",
-      "parentNumber": "94-501-30-86"
     },
     {
       "fullName": "Мехмоналиева Махлиёхон",
       "mfy": "Обод",
       "street": "Ижодкор",
       "house": 26,
-      "parentName": "",
-      "parentNumber": ""
+      "parentsName": "Азизжон Мехмоналиевич Файзиматов",
+      "parentNumber": "___"
+    },
+    {
+      "fullName": "Кодырова Сабрина",
+      "mfy": "Кулал",
+      "street": "Конзор",
+      "house": 39,
+      "parentsName": "___",
+      "parentNumber": "___"
+    },
+    {
+      "fullName": "Маъруфов Зохиджон",
+      "mfy": "Файзобод",
+      "street": "Олтин Водий",
+      "house": 2,
+      "parentsName": "Пулатова Шахло",
+      "parentNumber": "94-501-30-86"
     },
     {
       "fullName": "Муродова Зебо",
       "mfy": "Булоқ боши",
       "street": "Чорбог",
       "house": 70,
-      "parentName": "Файзиматов Азизжон, Файзиматова Барнохон",
+      "parentsName": "Файзиматов Азизжон, Файзиматова Барнохон",
       "parentNumber": "90-570-45-11"
     },
     {
-      "fullName": "Назиров Санжар",
-      "mfy": "",
-      "street": "",
+      "fullName": "Муродалиев Иброҳимжон",
+      "mfy": "___",
+      "street": "___",
       "house": 0,
-      "parentName": "",
-      "parentNumber": ""
+      "parentsName": "___",
+      "parentNumber": "___"
+    },
+    {
+      "fullName": "Мухсинов Диёрбек",
+      "mfy": "Олтин Водий",
+      "street": "Олтин Водий",
+      "house": 238,
+      "parentsName": "Узоков Шерзон",
+      "parentNumber": "94-554-88-34"
+    },
+    {
+      "fullName": "Назиров Санжарбек",
+      "mfy": "___",
+      "street": "___",
+      "house": 0,
+      "parentsName": "Юсупов Хаётжон",
+      "parentNumber": "97-208-32-22"
     },
     {
       "fullName": "Неъматов Аюбхон",
       "mfy": "Х.Дустлиги",
       "street": "Х.Дустлиги",
       "house": 8,
-      "parentName": "Эшонхонов Лазизжон, Алиева Наргиза",
+      "parentsName": "Эшонхонов Лазизжон, Алиева Наргиза",
       "parentNumber": "91-693-27-81"
     },
     {
@@ -117,15 +157,15 @@
       "mfy": "Бой",
       "street": "Озодлик",
       "house": 12,
-      "parentName": "",
-      "parentNumber": ""
+      "parentsName": "___",
+      "parentNumber": "___"
     },
     {
-      "fullName": "Одилов Сардор",
+      "fullName": "Одилов Сардорбек",
       "mfy": "Булоқ боши",
-      "street": "",
+      "street": "Булоқ боши",
       "house": 57,
-      "parentName": "",
+      "parentsName": "Отажонов Орипжон",
       "parentNumber": "33-646-05-09"
     },
     {
@@ -133,7 +173,7 @@
       "mfy": "Булоқ боши",
       "street": "Охунбобоев",
       "house": 29,
-      "parentName": "Одилов Гаффоржон, Одилова Дилфуза.",
+      "parentsName": "Одилов Гаффоржон, Одилова Дилфуза.",
       "parentNumber": "99-880-83-79"
     },
     {
@@ -141,23 +181,23 @@
       "mfy": "Кум",
       "street": "Садокат",
       "house": 17,
-      "parentName": "Мамадалиев Дилшоджон, Норматова Наргиза",
+      "parentsName": "Мамадалиев Дилшоджон, Норматова Наргиза",
       "parentNumber": "90-366-36-05"
     },
     {
-      "fullName": "Орипова Фотима",
+      "fullName": "Орипова Фотимабону",
       "mfy": "Файзобод",
       "street": "Гулистан",
       "house": 17,
-      "parentName": "",
+      "parentsName": "Хасанова Холисхон",
       "parentNumber": "94-603-45-41"
     },
     {
-      "fullName": "Орипова Зухра",
+      "fullName": "Орипова Зухрабону",
       "mfy": "Файзобод",
       "street": "Гулистан",
       "house": 17,
-      "parentName": "",
+      "parentsName": "Хасанова Холисхон",
       "parentNumber": "94-603-45-41"
     },
     {
@@ -165,7 +205,7 @@
       "mfy": "Булоқ боши",
       "street": "Арчазор",
       "house": 27,
-      "parentName": "Набиев Ойбекжон, Набиева Наргиза",
+      "parentsName": "Набиев Ойбекжон, Набиева Наргиза",
       "parentNumber": "94-317-92-45"
     },
     {
@@ -173,31 +213,39 @@
       "mfy": "Обод",
       "street": "Ибн Сино",
       "house": 1,
-      "parentName": "Умаров Улугбек, Умарова Гулноза",
+      "parentsName": "Умаров Улугбек, Умарова Гулноза",
       "parentNumber": "90-360-27-48"
     },
     {
-      "fullName": "Салиева Хадича",
-      "mfy": "Яккатут",
-      "street": "Бучтон",
-      "house": 93,
-      "parentName": "",
-      "parentNumber": "88-707-12-29"
+      "fullName": "Рустамова Хонзодабегим",
+      "mfy": "Чорбог",
+      "street": "Мовий Осмон",
+      "house": 1,
+      "parentsName": "Акбарова Зулайхо ",
+      "parentNumber": "94-133-07-00"
     },
     {
       "fullName": "Собирова Сугдиёна",
       "mfy": "Обод",
       "street": "Бодомзор",
       "house": 6,
-      "parentName": "Юлдашев Рустамжон, Юлдашева Маликахон",
+      "parentsName": "Юлдашев Рустамжон, Юлдашева Маликахон",
       "parentNumber": "91-693-36-80"
+    },
+    {
+      "fullName": "Салиева Хадича",
+      "mfy": "Яккатут",
+      "street": "Бучтон",
+      "house": 93,
+      "parentsName": "Матмусаева Умида",
+      "parentNumber": "97-816-76-79"
     },
     {
       "fullName": "Сотиволдиев Темурбек",
       "mfy": "Булоқ боши",
       "street": "Тадбиркорлар",
       "house": 19,
-      "parentName": "Шодмонов Зокиржон, Зунунова Дилноза",
+      "parentsName": "Шодмонов Зокиржон, Зунунова Дилноза",
       "parentNumber": "91-151-10-49"
     },
     {
@@ -205,48 +253,40 @@
       "mfy": "Чорбог",
       "street": "Мовий Осмон",
       "house": 1,
-      "parentName": "",
+      "parentsName": "",
       "parentNumber": "94-133-07-00"
     },
     {
-      "fullName": "Турдалиев ?",
-      "mfy": "Янги Хаёт",
-      "street": "Олмозор",
-      "house": 99,
-      "parentName": "",
-      "parentNumber": "99-534-23-78"
+      "fullName": "Турдалиева Мохина",
+      "mfy": "___",
+      "street": "___",
+      "house": 0,
+      "parentsName": "Махкамов Бахтиёржон ",
+      "parentNumber": "___"
     },
     {
-      "fullName": "Умаров Авазбек",
-      "mfy": "Сирдарё",
-      "street": "Текин",
-      "house": 4,
-      "parentName": "Абдувахитов Носир, Абдувахитова Гулдуз",
-      "parentNumber": "94-435-37-56"
+      "fullName": "Шавкатжонова Хидоят",
+      "mfy": "___",
+      "street": "___",
+      "house": 0,
+      "parentsName": "Орипов Ахаджон",
+      "parentNumber": "___"
     },
     {
-      "fullName": "Умарова Асалхон",
-      "mfy": "Кайрат",
-      "street": "Кайрат",
-      "house": 2,
-      "parentName": "",
-      "parentNumber": "94-273-52-67"
+      "fullName": "Эргашалиева Зарнигор",
+      "mfy": "Чорбог",
+      "street": "Чорбог",
+      "house": 19,
+      "parentsName": "Турдалиев Хислатжон",
+      "parentNumber": "94-553-39-20"
     },
     {
-      "fullName": "Ўринбекова Гулноза",
-      "mfy": "Гулистон",
-      "street": "Истиқлол",
-      "house": 17,
-      "parentName": "",
-      "parentNumber": "91-300-14-79"
-    },
-    {
-      "fullName": "Хабибуллаев Хусейн",
-      "mfy": "Мухторм",
-      "street": "Мухторм",
-      "house": 16,
-      "parentName": "Восиев Алкул, Восиева Дилзод",
-      "parentNumber": "94-331-46-23"
+      "fullName": "Яхшиева Адиба",
+      "mfy": "Обод",
+      "street": "Обод",
+      "house": 25,
+      "parentsName": "Яхшиева Адиба",
+      "parentNumber": "50-109-35-09"
     }
   ]
 }
