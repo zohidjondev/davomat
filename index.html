@@ -15,30 +15,33 @@
       <!-- Options will be loaded here via JavaScript -->
     </select>
 
+    <!-- Reason Input -->
+    <label for="reasonInput">Дарсга келмаслик сабаби: </label>
+    <input type="text" id="reasonInput" placeholder="Сабабни киритинг" />
+
     <button id="addStudentBtn">Ўқувчини қўшиш</button>
 
     <!-- Table Section -->
     <table id="attendanceTable">
-      <caption>
-        <!-- Бешарик тумани 2-умумтаълим мактаби бўйича 2024 йил (хх ой) куни дарсга келмаган ўқувчилар тўғрисидаги Маълумот -->
-      </caption>
+      <caption></caption>
       <thead>
         <tr>
           <th>№</th>
-          <th>Дарсга келмаган ўқувчининг Ф. И</th>
+          <th>Дарсга келмаган ўқувчининг Ф. И.</th>
           <th>МФЙ</th>
           <th>Кўча номи</th>
           <th>Уй</th>
           <th>Ота-онасининг Ф. И.</th>
-          <th>Ота-онасининг телефон рақами</th>
+          <th>Ота ёки онасининг телефон рақами</th>
+          <th>Дарсга қатнашмаганлик сабаблари</th>
         </tr>
       </thead>
       <tbody>
         <!-- Rows will be added here dynamically -->
       </tbody>
     </table>
-
-    <button id="printBtn">ПДФ-ни юклаб олиш</button>
+    <button class="danger deleteLastBtn">Охирги ўқувчини ўчириш</button>
+    <button id="printBtn">ПДФни юклаб олиш</button>
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
